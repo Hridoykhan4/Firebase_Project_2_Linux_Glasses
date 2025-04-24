@@ -24,7 +24,6 @@ const SocialLogin = () => {
   const handleGoogle = () => {
     logInWithGoogle().then((result) => {
       setUser(result.user);
-      console.log(result.user)
       navigate(state ? state : "/products");
     });
   };
